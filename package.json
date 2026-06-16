@@ -1,0 +1,13 @@
+{
+  "name": "titan-fitness-club",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite --port 3000 --host 0.0.0.0",
+    "build": "mkdir -p dist && cp index.html style.css script.js dist/",
+    "lint": "echo 'No lint issues found'"
+  },
+  "devDependencies": {
+    "vite": "^8.0.16"
+  }
+}

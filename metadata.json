@@ -1,0 +1,8 @@
+{
+  "name": "Titan Fitness Club",
+  "description": "Indirapuram's premium physical performance destination sports club.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

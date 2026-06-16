@@ -1,0 +1,1158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Titan Fitness Club | Best Gym in Indirapuram, Ghaziabad</title>
+    <meta name="description" content="Titan Fitness Club is Indirapuram's premium physical performance destination. Compound lift power stages, cardiac health simulators, and ACE/ISSA certified nutritionists." />
+    <!-- Preconnect and import Outfit & Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+    <!-- Tailwind Play CDN for Static On-The-Fly Utility Class compilation -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              gold: {
+                400: '#f6d365',
+                500: '#cca43b',
+                600: '#b38b2e',
+                950: '#1c1507',
+              }
+            },
+            fontFamily: {
+              sans: ['Outfit', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="bg-black text-white antialiased">
+
+    <!-- NAVIGATION HEADER -->
+    <nav id="titan-navbar" class="fixed-nav initial">
+      <div class="container flex items-center justify-between" style="position:relative;">
+        <a id="nav-brand-logo" href="#home" class="flex items-center gap-2" style="font-weight: 900; font-size: 1.25rem;">
+          <div style="background-color: var(--color-gold-500); padding: 0.5rem; border-radius: 0.25rem; color: black; display: flex; align-items: center;">
+            <svg style="width:1.25rem; height:1.25rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6.5 6.5 11 11M21 21l-3.5-3.5M3 3l3.5 3.5M18.5 5.5l1.5-1.5 1.5 1.5-1.5 1.5ZM4 20l1.5-1.5 1.5 1.5-1.5 1.5ZM18.5 7.5l-2-2 1.5-1.5-1.5-1.5-1.5 1.5-2 2M7.5 18.5l-2-2 1.5-1.5-1.5-1.5-1.5 1.5-2 2M15 15l-6-6"/></svg>
+          </div>
+          <span>TITAN <span class="text-gold-400">FITNESS</span></span>
+        </a>
+        
+        <div class="hidden-md-down flex items-center gap-4">
+          <a class="nav-link active" href="#home">Home</a>
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#why-us">Why Us</a>
+          <a class="nav-link" href="#programs">Programs</a>
+          <a class="nav-link" href="#schedule">Schedule</a>
+          <a class="nav-link" href="#membership">Membership</a>
+          <a class="nav-link" href="#trainers">Trainers</a>
+          <a class="nav-link" href="#transformations">Before & After</a>
+          <a class="nav-link" href="#gallery">Gallery</a>
+          <a class="nav-link" href="#faq">FAQ</a>
+          <a class="nav-link" href="#contact">Contact</a>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <button id="main-trial-nav-btn" class="btn btn-primary py-2 px-4 hidden-md-down claim-pass-launch-btn" data-program="General Consultation" style="border-radius: 0.375rem; padding: 0.5rem 1rem;">Free Session Pass</button>
+          
+          <button id="menu-trigger" class="hidden-md-up btn btn-secondary" style="padding: 0.5rem;" aria-label="Toggle Mobile Menu">
+            <svg style="width:1.5rem; height:1.5rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div id="mobile-drawer" class="mobile-drawer">
+          <a class="nav-link active" href="#home" style="padding: 0.75rem 0;">Home</a>
+          <a class="nav-link" href="#about" style="padding: 0.75rem 0;">About</a>
+          <a class="nav-link" href="#why-us" style="padding: 0.75rem 0;">Why Us</a>
+          <a class="nav-link" href="#programs" style="padding: 0.75rem 0;">Programs</a>
+          <a class="nav-link" href="#schedule" style="padding: 0.75rem 0;">Schedule</a>
+          <a class="nav-link" href="#membership" style="padding: 0.75rem 0;">Membership</a>
+          <a class="nav-link" href="#trainers" style="padding: 0.75rem 0;">Trainers</a>
+          <a class="nav-link" href="#transformations" style="padding: 0.75rem 0;">Before & After</a>
+          <a class="nav-link" href="#gallery" style="padding: 0.75rem 0;">Gallery</a>
+          <a class="nav-link" href="#faq" style="padding: 0.75rem 0;">FAQ</a>
+          <a class="nav-link" href="#contact" style="padding: 0.75rem 0;">Contact</a>
+          <button class="btn btn-primary w-full mt-2 claim-pass-launch-btn" data-program="General Consultation">Free Pass Now</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO HOME VIEW -->
+    <header id="home" class="hero">
+      <div class="hero-bg">
+        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1200&auto=format&fit=crop" alt="Titan Gym Frame" />
+        <div class="hero-overlay-gradient"></div>
+      </div>
+      
+      <div class="container" style="position: relative; z-index: 5; text-align: left; padding-top: 4rem;">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          <span class="font-mono text-[9px] uppercase font-bold tracking-widest text-gold-400">INDIRAPURAM'S PREMIUM STRENGTH CLUB</span>
+        </div>
+        
+        <h1 class="font-sans text-5xl font-black uppercase tracking-tight text-white mb-6" style="line-height:1.05; max-width: 48rem; font-size: 4rem;">
+          ELIMINATE EXCUSES.<br/>
+          FORGE YOUR <span class="gold-gradient-text">TITAN FRAME</span>.
+        </h1>
+        
+        <p class="text-zinc-400 text-sm max-w-xl mb-10 line-relaxed">
+          The ultimate physical performance sanctuary in Indirapuram, Ghaziabad. Outfitted with elite biomechanical loaders, professional safety cages, and ACE/ISSA-certified orthopedic personal trainers.
+        </p>
+
+        <div class="flex items-center gap-4 flex-col sm:flex-row" style="align-items: stretch; justify-content: flex-start; flex-wrap: wrap;">
+          <button class="btn btn-primary claim-pass-launch-btn" data-program="Premium Day Pass" id="hero-cta-claim-pass" style="min-width: 15rem;">Claim Free 1-Day Trial Pass</button>
+          <a href="#biometrics" class="btn btn-secondary text-center" id="hero-cta-calc-bmi" style="min-width: 15rem; display: flex; align-items: center; justify-content: center;">Calculate Bio Indices</a>
+        </div>
+
+        <div class="flex items-center gap-6 mt-16 text-zinc-500 font-mono text-[10px] uppercase tracking-wider" style="flex-wrap: wrap;">
+          <div class="flex items-center gap-2"><svg style="width:1rem; height:1rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> No Hidden Setup Fees</div>
+          <div class="flex items-center gap-2"><svg style="width:1rem; height:1rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Certified Posture Safety</div>
+          <div class="flex items-center gap-2"><svg style="width:1rem; height:1rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Triple Sanitized Stations</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+      <div class="container grid grid-cols-2-md gap-8 items-center" style="column-gap: 4rem;">
+        <div style="text-align: left;">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-gold-950/40 border border-gold-500/20 mb-4" style="background-color: var(--color-gold-950); padding: 0.25rem 0.75rem; border-radius: 0.25rem; border: 1px solid rgba(204,164,59,0.2);">
+            <span class="badge-dot" style="width:0.35rem; height:0.35rem; display:inline-block;"></span>
+            <span class="font-mono text-[9px] uppercase font-bold tracking-widest text-gold-400">PHYSICAL CRAFTSMANSHIP</span>
+          </div>
+          <h2 class="text-4xl font-black uppercase text-white mb-6">Indirapuram's Leading <span class="text-stroke-gold italic">Longevity Center</span></h2>
+          <p class="text-zinc-400 text-sm mb-6 line-relaxed">
+            Founded in Indirapuram, Ghaziabad, Titan Fitness Club is not just a gym network block, but an athletic environment optimized to prevent back pain, increase vital muscular density, and map healthy longevity schedules.
+          </p>
+          <p class="text-zinc-400 text-sm mb-8 line-relaxed">
+            We employ rigorous diagnostic posture analyses, guide standard breathing routines during squats, and keep a clean floor layout containing heavy-weight barbell cages, multi-pulley functional cables, and fresh lockers.
+          </p>
+
+          <div class="grid grid-cols-2-sm gap-4">
+            <div class="p-4 bg-zinc-950 rounded border border-zinc-900">
+              <div class="text-2xl font-black text-gold-400 font-mono">12,000+</div>
+              <div class="text-xs text-zinc-400 uppercase tracking-wider font-bold mt-1">Sqft Floor Space</div>
+            </div>
+            <div class="p-4 bg-zinc-950 rounded border border-zinc-900">
+              <div class="text-2xl font-black text-gold-400 font-mono">12+ Yrs</div>
+              <div class="text-xs text-zinc-400 uppercase tracking-wider font-bold mt-1">Industry Experience</div>
+            </div>
+          </div>
+        </div>
+        
+        <div style="position: relative;">
+          <!-- Decorative frame -->
+          <div style="aspect-ratio:4/3; border-radius: 1rem; overflow:hidden; border: 1px solid rgba(204,164,59,0.25);" class="gold-glow">
+            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=800&auto=format&fit=crop" alt="Strength lifter" style="width:100%; height:100%; object-fit:cover;" />
+          </div>
+          <div style="position: absolute; bottom: -2rem; right:-1rem; background-color: var(--color-zinc-950); border: 2px solid var(--color-gold-500); border-radius: 0.75rem; padding: 1.25rem;" class="hidden-md-down">
+            <div class="text-xs font-mono uppercase text-gold-500 font-bold">Orthopedic Safe</div>
+            <div class="text-white text-md font-black mt-1">100% POSTURE MONITORING</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US BENTO ADVANTAGES -->
+    <section id="why-us" class="bg-zinc-950">
+      <div class="container text-center">
+        <div class="mb-12">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-gold-500/10 border border-gold-500/20 mb-4" style="background-color: var(--color-gold-950); padding: 0.25rem 0.75rem; border-radius: 0.25rem; border: 1px solid rgba(204,164,59,0.2);">
+            <span class="badge-dot" style="width:0.35rem; height:0.35rem; display:inline-block;"></span>
+            <span class="font-mono text-[9px] uppercase font-bold tracking-widest text-gold-400">TITAN ADVANTAGES</span>
+          </div>
+          <h2 class="text-4xl font-black uppercase text-white mb-4">Forged For <span class="gold-gradient-text">Greatness</span></h2>
+          <p class="text-zinc-400 text-sm max-w-xl mx-auto">We provide a world-class physical space in Indirapuram engineered to eliminate excuses and empower sustainable body accomplishments.</p>
+        </div>
+
+        <div class="grid grid-cols-2-md grid-cols-4-md gap-6">
+          <div class="card gold-border-glow">
+            <div class="icon-shell"><svg style="width:1.5rem; height:1.5rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+            <h3 class="text-md font-black uppercase text-white mb-2">Certified Trainers</h3>
+            <p class="text-zinc-400 text-xs">Train with top coaches certified by ACE, ISSA, and ACSM. Strict posture vigilances.</p>
+          </div>
+          <div class="card gold-border-glow">
+            <div class="icon-shell"><svg style="width:1.5rem; height:1.5rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m6.5 6.5 11 11M21 21l-3.5-3.5M3 3l3.5 3.5M18.5 5.5l1.5-1.5 1.5 1.5-1.5 1.5ZM4 20l1.5-1.5 1.5 1.5-1.5 1.5ZM18.5 7.5l-2-2 1.5-1.5-1.5-1.5-1.5 1.5-2 2M7.5 18.5l-2-2 1.5-1.5-1.5-1.5-1.5 1.5-2 2M15 15l-6-6"/></svg></div>
+            <h3 class="text-md font-black uppercase text-white mb-2">Elite Gym Floor</h3>
+            <p class="text-zinc-400 text-xs">A 12,000+ sqft space equipped with elite biomechanic loaders, cables, and continuous rigs.</p>
+          </div>
+          <div class="card gold-border-glow">
+            <div class="icon-shell"><svg style="width:1.5rem; height:1.5rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+            <h3 class="text-md font-black uppercase text-white mb-2">Bespoke Plans</h3>
+            <p class="text-zinc-400 text-xs">No template schedules. Tailored load configurations mapping body composition metrics.</p>
+          </div>
+          <div class="card gold-border-glow">
+            <div class="icon-shell"><svg style="width:1.5rem; height:1.5rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></div>
+            <h3 class="text-md font-black uppercase text-white mb-2">Expert Nutrition</h3>
+            <p class="text-zinc-400 text-xs">Scientific macro partitioning guidelines mapped by our resident nutrition counselors.</p>
+          </div>
+          <div class="card gold-border-glow">
+            <div class="icon-shell"><svg style="width:1.5rem; height:1.5rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+            <h3 class="text-md font-black uppercase text-white mb-2">Pristine Hygiene</h3>
+            <p class="text-zinc-400 text-xs">Continuous air filtration, sterilized barbell bars, and high luxury housekeeping.</p>
+          </div>
+          <div class="card gold-border-glow">
+            <div class="icon-shell"><svg style="width:1.5rem; height:1.5rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+            <h3 class="text-md font-black uppercase text-white mb-2">Flexible Access</h3>
+            <p class="text-zinc-400 text-xs">Open Monday-Saturday (5 AM to 10 PM) and Sunday (7 AM to 1 PM) for corporate timelines.</p>
+          </div>
+          <div class="card gold-border-glow">
+            <div class="icon-shell"><svg style="width:1.5rem; height:1.5rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+            <h3 class="text-md font-black uppercase text-white mb-2">Group Classes</h3>
+            <p class="text-zinc-400 text-xs">High-energy sessions including Zumba, HIIT cardio, restore Yoga, and power Core.</p>
+          </div>
+          <div class="card gold-border-glow">
+            <div class="icon-shell"><svg style="width:1.5rem; height:1.5rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg></div>
+            <h3 class="text-md font-black uppercase text-white mb-2">Clarity Pricing</h3>
+            <p class="text-zinc-400 text-xs">Absolute transparency with zero hidden operating charges or registration costs.</p>
+          </div>
+        </div>
+
+        <div class="mt-12 bg-zinc-900/50 border border-gold-500/10 rounded-xl p-8 flex items-center justify-between flex-col md:flex-row gap-6 text-left">
+          <div>
+            <h4 class="text-white text-lg font-black uppercase">Ready to inspect the facility first hand?</h4>
+            <p class="text-xs text-zinc-400">Claim your complimentary 1-day pass. Posture diagnostic assessment is fully covered.</p>
+          </div>
+          <a href="#contact" class="btn btn-primary" style="white-space: nowrap;">Get Free Pass Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE WORKOUT PROGRAMS -->
+    <section id="programs">
+      <div class="container text-center">
+        <div class="mb-12">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-gold-950 border border-gold-500/25 mb-4" style="background-color: var(--color-gold-950); padding: 0.25rem 0.75rem; border-radius: 0.25rem; border: 1px solid rgba(204,164,59,0.2);">
+            <span class="badge-dot" style="width:0.35rem; height:0.35rem; display:inline-block;"></span>
+            <span class="font-mono text-[9px] uppercase font-bold tracking-widest text-gold-400">PROGRAM VERTICALS</span>
+          </div>
+          <h2 class="text-4xl font-black uppercase text-white mb-4">Core Training <span class="text-stroke-gold italic">Protocols</span></h2>
+          <p class="text-zinc-400 text-sm max-w-xl mx-auto">Scientifically designed pipelines built around compound load mechanics, cardio health conditioning, and senior support systems.</p>
+        </div>
+
+        <div class="grid grid-cols-2-md grid-cols-3-md gap-6">
+          <!-- Program Card 1 -->
+          <div class="program-card">
+            <div>
+              <div class="program-img-frame">
+                <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=800&auto=format&fit=crop" alt="Strength lifter" />
+                <div class="program-img-overlay"></div>
+                <div class="intensity-tag">Intermediate</div>
+              </div>
+              <div style="padding: 1.5rem; text-align: left;">
+                <h3 class="text-md font-black uppercase text-white mb-2">Strength & Powerlifting</h3>
+                <p class="text-zinc-400 text-xs line-relaxed mb-4">Master compound lifts like squat, bench press, deadlift safely under experienced posture-correction supervision.</p>
+                <div style="font-family: var(--font-mono); font-size: 0.65rem;" class="text-gold-400 uppercase tracking-wider">Target: Full Body Power & Posture</div>
+              </div>
+            </div>
+            <div style="padding: 1.5rem; border-top: 1px solid var(--color-zinc-900);">
+              <button class="btn btn-secondary w-full py-2.5 claim-pass-launch-btn" data-program="Strength & Powerlifting">Select This Protocol</button>
+            </div>
+          </div>
+
+          <!-- Program Card 2 -->
+          <div class="program-card">
+            <div>
+              <div class="program-img-frame">
+                <img src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?q=80&w=800&auto=format&fit=crop" alt="HIIT" />
+                <div class="program-img-overlay"></div>
+                <div class="intensity-tag">All Levels</div>
+              </div>
+              <div style="padding: 1.5rem; text-align: left;">
+                <h3 class="text-md font-black uppercase text-white mb-2">Fat Loss & High MET Burn</h3>
+                <p class="text-zinc-400 text-xs line-relaxed mb-4">A scientifically calibrated fat reduction framework that optimizes metabolic outputs with progressive recovery.</p>
+                <div style="font-family: var(--font-mono); font-size: 0.65rem;" class="text-gold-400 uppercase tracking-wider">Target: Optimized Caloric Definitions</div>
+              </div>
+            </div>
+            <div style="padding: 1.5rem; border-top: 1px solid var(--color-zinc-900);">
+              <button class="btn btn-secondary w-full py-2.5 claim-pass-launch-btn" data-program="Fat Loss & High MET Burn">Select This Protocol</button>
+            </div>
+          </div>
+
+          <!-- Program Card 3 -->
+          <div class="program-card">
+            <div>
+              <div class="program-img-frame">
+                <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=800&auto=format&fit=crop" alt="Hypertrophy" />
+                <div class="program-img-overlay"></div>
+                <div class="intensity-tag">Advanced</div>
+              </div>
+              <div style="padding: 1.5rem; text-align: left;">
+                <h3 class="text-md font-black uppercase text-white mb-2">Muscle Core Hypertrophy</h3>
+                <p class="text-zinc-400 text-xs line-relaxed mb-4">Focus on progressive strain splits and muscle symmetry. Maximize muscle cell hypertrophy and posture alignments.</p>
+                <div style="font-family: var(--font-mono); font-size: 0.65rem;" class="text-gold-400 uppercase tracking-wider">Target: Build Volume & Symmetrical Frame</div>
+              </div>
+            </div>
+            <div style="padding: 1.5rem; border-top: 1px solid var(--color-zinc-900);">
+              <button class="btn btn-secondary w-full py-2.5 claim-pass-launch-btn" data-program="Muscle Core Hypertrophy">Select This Protocol</button>
+            </div>
+          </div>
+
+          <!-- Program Card 4 -->
+          <div class="program-card">
+            <div>
+              <div class="program-img-frame">
+                <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?q=80&w=800&auto=format&fit=crop" alt="Functional training" />
+                <div class="program-img-overlay"></div>
+                <div class="intensity-tag">All Levels</div>
+              </div>
+              <div style="padding: 1.5rem; text-align: left;">
+                <h3 class="text-md font-black uppercase text-white mb-2">Functional Mobility & Balance</h3>
+                <p class="text-zinc-400 text-xs line-relaxed mb-4">Multi-planar interactive training designed to strengthen weak core areas, fix stabilizer tendons, and improve agility.</p>
+                <div style="font-family: var(--font-mono); font-size: 0.65rem;" class="text-gold-400 uppercase tracking-wider">Target: Core Balance & Flex Stabilization</div>
+              </div>
+            </div>
+            <div style="padding: 1.5rem; border-top: 1px solid var(--color-zinc-900);">
+              <button class="btn btn-secondary w-full py-2.5 claim-pass-launch-btn" data-program="Functional Mobility & Balance">Select This Protocol</button>
+            </div>
+          </div>
+
+          <!-- Program Card 5 -->
+          <div class="program-card">
+            <div>
+              <div class="program-img-frame">
+                <img src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?q=80&w=800&auto=format&fit=crop" alt="HIIT" />
+                <div class="program-img-overlay"></div>
+                <div class="intensity-tag">Advanced</div>
+              </div>
+              <div style="padding: 1.5rem; text-align: left;">
+                <h3 class="text-md font-black uppercase text-white mb-2">HIIT METCON Burnout</h3>
+                <p class="text-zinc-400 text-xs line-relaxed mb-4">Rapid-fire anaerobic intervals utilizing rowers, ropes, and explosive plyo blocks. Perfect for busy professionals.</p>
+                <div style="font-family: var(--font-mono); font-size: 0.65rem;" class="text-gold-400 uppercase tracking-wider">Target: High Stamina & Metabolic Peak</div>
+              </div>
+            </div>
+            <div style="padding: 1.5rem; border-top: 1px solid var(--color-zinc-900);">
+              <button class="btn btn-secondary w-full py-2.5 claim-pass-launch-btn" data-program="HIIT METCON Burnout">Select This Protocol</button>
+            </div>
+          </div>
+
+          <!-- Program Card 6 -->
+          <div class="program-card">
+            <div>
+              <div class="program-img-frame">
+                <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?q=80&w=800&auto=format&fit=crop" alt="Women training" />
+                <div class="program-img-overlay"></div>
+                <div class="intensity-tag">All Levels</div>
+              </div>
+              <div style="padding: 1.5rem; text-align: left;">
+                <h3 class="text-md font-black uppercase text-white mb-2">Women’s Elite Toning</h3>
+                <p class="text-zinc-400 text-xs line-relaxed mb-4">Focused on core, posterior chain strength, posture alignment and comfort in an incredibly clean environment.</p>
+                <div style="font-family: var(--font-mono); font-size: 0.65rem;" class="text-gold-400 uppercase tracking-wider">Target: Tone, Athletic Power & Hip Joints</div>
+              </div>
+            </div>
+            <div style="padding: 1.5rem; border-top: 1px solid var(--color-zinc-900);">
+              <button class="btn btn-secondary w-full py-2.5 claim-pass-launch-btn" data-program="Women’s Elite Toning">Select This Protocol</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BIOMETRICS INTERACTIVE ESTIMATOR -->
+    <section id="biometrics" class="bg-zinc-950">
+      <div class="container">
+        <div class="grid grid-cols-12-lg gap-8 items-center">
+          <div class="span-4-lg" style="text-align: left; grid-column: span 4;">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-gold-950 border border-gold-500/20 mb-4" style="background-color: var(--color-gold-950); padding: 0.25rem 0.75rem; border-radius: 0.25rem; border: 1px solid rgba(204,164,59,0.2);">
+              <span class="badge-dot" style="width:0.35rem; height:0.35rem; display:inline-block;"></span>
+              <span class="font-mono text-[9px] uppercase font-bold tracking-widest text-gold-400">BIOMETRIC COEFFICIENT ESTIMATOR</span>
+            </div>
+            <h2 class="text-4xl font-black uppercase text-white mb-4">Interactive <span class="gold-gradient-text">InBody Matrix</span></h2>
+            <p class="text-zinc-400 text-xs sm:text-sm line-relaxed">
+              Calculate your body indices to receive instant recommended workout programs. Compute your Body Mass Index (BMI), Basal Metabolic Rate (BMR) with the Mifflin-St Jeor formula, and estimated Total Daily Energy Expenditure (TDEE).
+            </p>
+          </div>
+
+          <div class="span-8-lg p-6 bg-zinc-900/60 border border-zinc-850 rounded-xl" style="grid-column: span 8;">
+            <form id="biometric-formula-form">
+              <div class="grid grid-cols-2-sm gap-4 mb-4">
+                <div class="form-group" style="text-align: left;">
+                  <label class="form-label">Active Gender</label>
+                  <div class="flex gap-2">
+                    <button type="button" id="gender-male-btn" class="btn btn-primary flex-1 py-2">Male</button>
+                    <button type="button" id="gender-female-btn" class="btn btn-secondary flex-1 py-2">Female</button>
+                  </div>
+                </div>
+                
+                <div class="form-group" style="text-align: left;">
+                  <label class="form-label" for="input-age">Your Age (Years)</label>
+                  <input type="number" id="input-age" value="26" min="12" max="90" class="form-input" style="height: 2.3rem;" />
+                </div>
+              </div>
+
+              <!-- Height input with linked slider -->
+              <div class="form-group mb-6" style="text-align: left;">
+                <div class="flex justify-between items-center mb-1">
+                  <label class="form-label" for="input-height">Height Indicator</label>
+                  <span id="height-lbl-val" class="font-mono text-xs text-gold-400 font-bold">175 cm</span>
+                </div>
+                <div class="flex gap-4 items-center">
+                  <input type="range" id="input-height" min="120" max="220" value="175" />
+                  <input type="number" id="height-num" value="175" style="width: 5rem;" class="form-input text-center" />
+                </div>
+              </div>
+
+              <!-- Weight input with linked slider -->
+              <div class="form-group mb-6" style="text-align: left;">
+                <div class="flex justify-between items-center mb-1">
+                  <label class="form-label" for="input-weight">Weight Indicator</label>
+                  <span id="weight-lbl-val" class="font-mono text-xs text-gold-400 font-bold">72 kg</span>
+                </div>
+                <div class="flex gap-4 items-center">
+                  <input type="range" id="input-weight" min="30" max="180" value="72" />
+                  <input type="number" id="weight-num" value="72" style="width: 5rem;" class="form-input text-center" />
+                </div>
+              </div>
+
+              <div class="form-group" style="text-align: left; margin-bottom: 2rem;">
+                <label class="form-label" for="select-activity">Daily Activity Coefficient</label>
+                <select id="select-activity" class="form-select">
+                  <option value="1.2">Sedentary (No formal workouts, desk bound)</option>
+                  <option value="1.375" selected>Lightly Active (1-3 sessions a week)</option>
+                  <option value="1.55">Moderately Active (3-5 vigorous sessions a week)</option>
+                  <option value="1.725">Very Active (Heavy compound lifting 6 times a week)</option>
+                </select>
+              </div>
+
+              <button type="submit" class="btn btn-primary w-full py-3.5">Compute My Body Diagnostics Metrics</button>
+            </form>
+
+            <div id="output-biometric-result" class="hidden"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ELITE CERTIFIED TRAINERS -->
+    <section id="trainers">
+      <div class="container text-center">
+        <div class="mb-12">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-gold-950 border border-gold-500/20 mb-4" style="background-color: var(--color-gold-950); padding: 0.25rem 0.75rem; border-radius: 0.25rem; border: 1px solid rgba(204,164,59,0.2);">
+            <span class="badge-dot" style="width:0.35rem; height:0.35rem; display:inline-block;"></span>
+            <span class="font-mono text-[9px] uppercase font-bold tracking-widest text-gold-400">ELITE TEAM LEADERS</span>
+          </div>
+          <h2 class="text-4xl font-black uppercase text-white mb-4">Elite Certified <span class="text-stroke-gold italic">Coaching Staff</span></h2>
+          <p class="text-zinc-400 text-sm max-w-xl mx-auto">Meet our nationally recognized orthopedic physical coaches certified by ACE, ACSM, ISSA and Gold's Academies.</p>
+        </div>
+
+        <div class="grid grid-cols-2-md grid-cols-4-md gap-6">
+          <!-- Rajesh Card -->
+          <div class="card" style="padding:0; overflow:hidden; border-radius:0.75rem; text-align: left;">
+            <div style="aspect-ratio:3/4; overflow:hidden; position:relative;">
+              <img src="https://images.unsplash.com/photo-1605296867304-46d5465a25f1?q=80&w=600&auto=format&fit=crop" style="width:100%; height:100%; object-fit:cover;" alt="Rajesh Head Coach" />
+            </div>
+            <div style="padding:1.5rem;">
+              <span class="font-mono text-[9px] uppercase font-bold text-gold-400 tracking-wider">HEAD STRENGTH COACH</span>
+              <h3 class="text-lg font-black uppercase text-white mt-1">Rajesh Sharma</h3>
+              <p class="text-xs text-zinc-500 mt-1">12 Years experience · ACSM, ISSA Certified</p>
+              <p class="text-[11px] text-zinc-400 mt-4 italic leading-relaxed">"The barbell is a conversation between your willpower and your skeleton."</p>
+            </div>
+          </div>
+
+          <!-- Priya Card -->
+          <div class="card" style="padding:0; overflow:hidden; border-radius:0.75rem; text-align: left;">
+            <div style="aspect-ratio:3/4; overflow:hidden; position:relative;">
+              <img src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?q=80&w=600&auto=format&fit=crop" style="width:100%; height:100%; object-fit:cover;" alt="Priya Trainer" />
+            </div>
+            <div style="padding:1.5rem;">
+              <span class="font-mono text-[9px] uppercase font-bold text-gold-400 tracking-wider">HIIT CATALYST</span>
+              <h3 class="text-lg font-black uppercase text-white mt-1">Priya Chaudhary</h3>
+              <p class="text-xs text-zinc-500 mt-1">8 Years experience · ACE Certified CPT</p>
+              <p class="text-[11px] text-zinc-400 mt-4 italic leading-relaxed">"Strength represents independence. We cultivate real human self-esteem."</p>
+            </div>
+          </div>
+
+          <!-- Vikram Card -->
+          <div class="card" style="padding:0; overflow:hidden; border-radius:0.75rem; text-align: left;">
+            <div style="aspect-ratio:3/4; overflow:hidden; position:relative;">
+              <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?q=80&w=600&auto=format&fit=crop" style="width:100%; height:100%; object-fit:cover;" alt="Vikram Trainer" />
+            </div>
+            <div style="padding:1.5rem;">
+              <span class="font-mono text-[9px] uppercase font-bold text-gold-400 tracking-wider">JOINT REHAB & MOBILITY</span>
+              <h3 class="text-lg font-black uppercase text-white mt-1">Vikram Singh</h3>
+              <p class="text-xs text-zinc-500 mt-1">9 Years experience · CrossFit L3, NASM-CES</p>
+              <p class="text-[11px] text-zinc-400 mt-4 italic leading-relaxed">"Joint symmetry dictates lift volume. Learn to anchor your skeleton first."</p>
+            </div>
+          </div>
+
+          <!-- Ananya Card -->
+          <div class="card" style="padding:0; overflow:hidden; border-radius:0.75rem; text-align: left;">
+            <div style="aspect-ratio:3/4; overflow:hidden; position:relative;">
+              <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?q=80&w=600&auto=format&fit=crop" style="width:100%; height:100%; object-fit:cover;" alt="Ananya Dietician" />
+            </div>
+            <div style="padding:1.5rem;">
+              <span class="font-mono text-[9px] uppercase font-bold text-gold-400 tracking-wider">RESIDENT DIETICIAN</span>
+              <h3 class="text-lg font-black uppercase text-white mt-1">Ananya Gupta</h3>
+              <p class="text-xs text-zinc-500 mt-1">7 Years experience · M.Sc Foods, DU nutritionist</p>
+              <p class="text-[11px] text-zinc-400 mt-4 italic leading-relaxed">"You cannot spend 1 hour in the gym to out-train a chaotic food routine."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DYNAMIC WEEKLY CLASS TIMETABLE -->
+    <section id="schedule" class="bg-zinc-950">
+      <div class="container text-center">
+        <div class="mb-12">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-gold-950 border border-gold-500/20 mb-4" style="background-color: var(--color-gold-950); padding: 0.25rem 0.75rem; border-radius: 0.25rem; border: 1px solid rgba(204,164,59,0.2);">
+            <span class="badge-dot" style="width:0.35rem; height:0.35rem; display:inline-block;"></span>
+            <span class="font-mono text-[9px] uppercase font-bold tracking-widest text-gold-400">CLASS TIMETABLE</span>
+          </div>
+          <h2 class="text-4xl font-black uppercase text-white mb-4">Weekly Class <span class="gold-gradient-text">Schedule</span></h2>
+          <p class="text-zinc-400 text-sm max-w-xl mx-auto">Filter sessions smoothly by weekdays calendar and discipline verticals to secure reservation details.</p>
+        </div>
+
+        <!-- Weekday selectors pill buttons bar -->
+        <div class="flex flex-wrap items-center justify-center gap-2 mb-8" style="border-bottom: 1px solid var(--color-zinc-900); padding-bottom: 1.5rem;">
+          <button class="pill-button active day-pill" data-day="Monday">Monday</button>
+          <button class="pill-button day-pill" data-day="Tuesday">Tuesday</button>
+          <button class="pill-button day-pill" data-day="Wednesday">Wednesday</button>
+          <button class="pill-button day-pill" data-day="Thursday">Thursday</button>
+          <button class="pill-button day-pill" data-day="Friday">Friday</button>
+          <button class="pill-button day-pill" data-day="Saturday">Saturday</button>
+        </div>
+
+        <!-- Class category pills -->
+        <div class="flex flex-wrap items-center justify-center gap-2 mb-12">
+          <button class="pill-round active cat-pill" data-category="All Classes">All Classes</button>
+          <button class="pill-round cat-pill" data-category="HIIT">HIIT</button>
+          <button class="pill-round cat-pill" data-category="Functional">Functional</button>
+          <button class="pill-round cat-pill" data-category="Zumba">Zumba</button>
+          <button class="pill-round cat-pill" data-category="Yoga">Yoga</button>
+          <button class="pill-round cat-pill" data-category="Strength">Strength</button>
+          <button class="pill-round cat-pill" data-category="Core">Core</button>
+        </div>
+
+        <!-- Dynamic listings grid -->
+        <div id="schedule-list-display" class="grid grid-cols-2-md grid-cols-3-md gap-6"></div>
+      </div>
+    </section>
+
+    <!-- TRANFORMTATIONS before/after -->
+    <section id="transformations">
+      <div class="container text-center">
+        <div class="mb-12">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-gold-950 border border-gold-500/20 mb-4" style="background-color: var(--color-gold-950); padding: 0.25rem 0.75rem; border-radius: 0.25rem; border: 1px solid rgba(204,164,59,0.2);">
+            <span class="badge-dot" style="width:0.35rem; height:0.35rem; display:inline-block;"></span>
+            <span class="font-mono text-[9px] uppercase font-bold tracking-widest text-gold-400">PROVEN TRANSFORMATIONS</span>
+          </div>
+          <h2 class="text-4xl font-black uppercase text-white mb-4">Skeletal <span class="text-stroke-gold italic">Success Stories</span></h2>
+          <p class="text-zinc-400 text-sm max-w-xl mx-auto">Real physical adjustments achieved by members at our Indirapuram branch through structured compound progressive load guidelines.</p>
+        </div>
+
+        <div class="grid grid-cols-2-md grid-cols-3-md gap-6">
+          <!-- Story 1 -->
+          <div class="card flex flex-col justify-between" style="text-align: left; padding: 2rem;">
+            <div>
+              <div class="flex items-center gap-3 mb-4">
+                <div style="background-color: var(--color-gold-950); padding: 0.5rem; border-radius: 50%; color: var(--color-gold-400); display:flex;">
+                  <svg style="width:1.25rem; height:1.25rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8l-4 4h8z"/></svg>
+                </div>
+                <div>
+                  <h3 class="text-md font-black uppercase text-white leading-tight">Amit Verma</h3>
+                  <p class="text-[10px] text-zinc-500">34 Yrs · Corporate Director</p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-2-sm gap-2 mb-4 text-xs font-mono">
+                <div class="p-2 bg-zinc-900 rounded" style="border: 1px solid var(--color-zinc-800);"><strong class="text-zinc-500 block">BEFORE:</strong> 98 kg</div>
+                <div class="p-2 bg-zinc-900 rounded select-none" style="border:1px solid rgba(204,164,59,0.3);"><strong class="text-gold-400 block">AFTER:</strong> 76 kg</div>
+              </div>
+
+              <div class="mb-4">
+                <div class="text-xs font-bold text-white uppercase tracking-wider">Goal: Combating Prediabetes</div>
+                <div class="text-xs text-gold-400 mt-0.5">Achievement: Normalized insulin sensitivity & lost 22 kg</div>
+              </div>
+
+              <p class="text-[11px] text-zinc-400 leading-relaxed italic">"Late-night corporate catering had crippled my posture. Rajesh engineered high-efficiency compound protocols around board calls, and Ananya restructured my diet. I carry myself with unmatched weekly physical power."</p>
+            </div>
+            <div class="text-[10px] text-zinc-500 font-mono mt-6 border-t border-zinc-900 pt-4">Transformation Cycle: 6 Months duration</div>
+          </div>
+
+          <!-- Story 2 -->
+          <div class="card flex flex-col justify-between" style="text-align: left; padding: 2rem;">
+            <div>
+              <div class="flex items-center gap-3 mb-4">
+                <div style="background-color: var(--color-gold-950); padding: 0.5rem; border-radius: 50%; color: var(--color-gold-400); display:flex;">
+                  <svg style="width:1.25rem; height:1.25rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8l-4 4h8z"/></svg>
+                </div>
+                <div>
+                  <h3 class="text-md font-black uppercase text-white leading-tight">Rahul Rawat</h3>
+                  <p class="text-[10px] text-zinc-500">21 Yrs · University Student</p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-2-sm gap-2 mb-4 text-xs font-mono">
+                <div class="p-2 bg-zinc-900 rounded" style="border: 1px solid var(--color-zinc-800);"><strong class="text-zinc-500 block">BEFORE:</strong> 57 kg</div>
+                <div class="p-2 bg-zinc-900 rounded select-none" style="border:1px solid rgba(204,164,59,0.3);"><strong class="text-gold-400 block">AFTER:</strong> 69.5 kg</div>
+              </div>
+
+              <div class="mb-4">
+                <div class="text-xs font-bold text-white uppercase tracking-wider">Goal: Lean Hypertrophy splits</div>
+                <div class="text-xs text-gold-400 mt-0.5">Achievement: Gained 12.5 kg dense skeletal muscle</div>
+              </div>
+
+              <p class="text-[11px] text-zinc-400 leading-relaxed italic">"I was highly self-conscious due to my lean ectomorph frame. Vikram taught me proper breathing mechanics and how to progressive overload barbell squats and bench press without joint stress. This forged unshakeable confidence in me."</p>
+            </div>
+            <div class="text-[10px] text-zinc-500 font-mono mt-6 border-t border-zinc-900 pt-4">Transformation Cycle: 8 Months duration</div>
+          </div>
+
+          <!-- Story 3 -->
+          <div class="card flex flex-col justify-between" style="text-align: left; padding: 2rem;">
+            <div>
+              <div class="flex items-center gap-3 mb-4">
+                <div style="background-color: var(--color-gold-950); padding: 0.5rem; border-radius: 50%; color: var(--color-gold-400); display:flex;">
+                  <svg style="width:1.25rem; height:1.25rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8l-4 4h8z"/></svg>
+                </div>
+                <div>
+                  <h3 class="text-md font-black uppercase text-white leading-tight">Sneha Kapoor</h3>
+                  <p class="text-[10px] text-zinc-500">29 Yrs · Mother of Two</p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-2-sm gap-2 mb-4 text-xs font-mono">
+                <div class="p-2 bg-zinc-900 rounded" style="border: 1px solid var(--color-zinc-800);"><strong class="text-zinc-500 block">BEFORE:</strong> Backaches</div>
+                <div class="p-2 bg-zinc-900 rounded select-none" style="border:1px solid rgba(204,164,59,0.3);"><strong class="text-gold-400 block">AFTER:</strong> Pain-Free Core</div>
+              </div>
+
+              <div class="mb-4">
+                <div class="text-xs font-bold text-white uppercase tracking-wider">Goal: Postpartum Core Rehab</div>
+                <div class="text-xs text-gold-400 mt-0.5">Achievement: Restored pelvic floor power and spinal mobility</div>
+              </div>
+
+              <p class="text-[11px] text-zinc-400 leading-relaxed italic">"I had constant lower backaches and weak pelvic alignment after childbirth. Priya created a specialized functional safety routine that safely restored my core strength. Today, I comfortably carry my children pain-free."</p>
+            </div>
+            <div class="text-[10px] text-zinc-500 font-mono mt-6 border-t border-zinc-900 pt-4">Transformation Cycle: 5 Months duration</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING PLANS PACKAGES -->
+    <section id="membership" class="bg-zinc-950">
+      <div class="container text-center">
+        <div class="mb-12">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-gold-950 border border-gold-500/20 mb-4" style="background-color: var(--color-gold-950); padding: 0.25rem 0.75rem; border-radius: 0.25rem; border: 1px solid rgba(204,164,59,0.2);">
+            <span class="badge-dot" style="width:0.35rem; height:0.35rem; display:inline-block;"></span>
+            <span class="font-mono text-[9px] uppercase font-bold tracking-widest text-gold-400">MEMBERSHIP PACKAGES</span>
+          </div>
+          <h2 class="text-4xl font-black uppercase text-white mb-4">Invest In Your <span class="gold-gradient-text">Titan Frame</span></h2>
+          <p class="text-zinc-400 text-sm max-w-xl mx-auto">Select a flexible program optimized around your professional lifestyle. Freeze or upgrade your parameters at any time.</p>
+        </div>
+
+        <!-- Billing interval interactive switcher bar -->
+        <div class="flex items-center justify-center mb-12">
+          <div class="flex bg-zinc-900 border border-zinc-800 p-1.5 rounded-xl max-w-md w-full">
+            <button class="cycle-switch-btn active btn flex-1 py-2 text-zinc-400" data-cycle="monthly" style="background-color:transparent; border-radius: 0.5rem; border:none; box-shadow:none;">Monthly</button>
+            <button class="cycle-switch-btn btn flex-1 py-2 text-zinc-400" data-cycle="quarterly" style="background-color:transparent; border-radius: 0.5rem; border:none; box-shadow:none; position:relative;">
+              Quarterly <span style="position:absolute; -top:0.6rem; right:0.5rem; background-color: var(--color-gold-500); color:black; font-size:0.55rem; padding:0.1rem 0.35rem; border-radius:0.15rem; font-weight:800;">-15%</span>
+            </button>
+            <button class="cycle-switch-btn btn flex-1 py-2 text-zinc-400" data-cycle="annual" style="background-color:transparent; border-radius: 0.5rem; border:none; box-shadow:none; position:relative;">
+              Annual Pass <span style="position:absolute; -top:0.6rem; right:0.5rem; background-color: var(--color-red-500); color:white; font-size:0.55rem; padding:0.1rem 0.35rem; border-radius:0.15rem; font-weight:800;">-30%</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2-md grid-cols-3-md gap-8 items-stretch">
+          <!-- Card Basic -->
+          <div class="card flex flex-col justify-between" style="text-align: left; padding: 2.5rem;">
+            <div>
+              <div class="flex items-center gap-3 mb-4">
+                <svg style="width:1.25rem; height:1.25rem;" class="text-zinc-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <h3 class="text-lg font-black uppercase text-white">Basic Membership</h3>
+              </div>
+              <p class="text-zinc-400 text-xs mb-6 min-h-[2.5rem]">Access the fundamental premium physical equipment and facilities on your own timetable.</p>
+              
+              <div class="mb-6 pb-6 border-b border-zinc-900">
+                <div class="flex items-baseline gap-1">
+                  <span id="price-val-basic" class="text-4xl font-black text-white font-mono">₹1,499</span>
+                  <span class="text-xs text-zinc-500 uppercase tracking-wider">/ mo</span>
+                </div>
+                <div id="price-sub-basic" class="text-xs text-gold-400 mt-2 font-mono">Billed monthly</div>
+                <div id="price-save-basic" class="hidden inline-block mt-3 px-2 py-0.5 rounded bg-amber-950/40 border border-amber-900/50 text-[9px] font-bold text-amber-400 uppercase"></div>
+              </div>
+
+              <ul class="flex-col gap-3 mb-8 text-xs text-zinc-300">
+                <li class="flex items-start gap-2.5"><svg style="width:1rem; height:1rem;" class="text-gold-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Full access to strength gym floors</li>
+                <li class="flex items-start gap-2.5" style="margin-top:0.75rem;"><svg style="width:1rem; height:1rem;" class="text-gold-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Advanced mechanical cardio loaders</li>
+                <li class="flex items-start gap-2.5" style="margin-top:0.75rem;"><svg style="width:1rem; height:1rem;" class="text-gold-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Triple-sanitized lockers & lockers suites</li>
+                <li class="flex items-start gap-2.5" style="margin-top:0.75rem;"><svg style="width:1rem; height:1rem;" class="text-gold-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> 1 complimentary personal coaching session</li>
+              </ul>
+            </div>
+            <button class="btn btn-secondary w-full py-3 claim-pass-launch-btn" data-program="Basic Membership Slot">Select This Tier</button>
+          </div>
+
+          <!-- Card Premium -->
+          <div class="card flex flex-col justify-between" style="text-align: left; padding: 2.5rem; border-color: var(--color-gold-500); position: relative;" class="gold-glow">
+            <div style="position: absolute; top: 0; right: 50%; transform: translate(50%, -50%); background-color: var(--color-gold-500); color:black; font-size: 0.65rem; font-weight: 900; text-transform: uppercase; letter-spacing:0.1em; padding: 0.35rem 1rem; border-radius: 9999px; white-space: nowrap;">⚡ MOST POPULAR TIER</div>
+            <div>
+              <div class="flex items-center gap-3 mb-4">
+                <svg style="width:1.25rem; height:1.25rem;" class="text-gold-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <h3 class="text-lg font-black uppercase text-white">Premium Club Tier</h3>
+              </div>
+              <p class="text-zinc-400 text-xs mb-6 min-h-[2.5rem]">Dive into expert group fitness sessions, body compositions diagnostic trackers, and exclusive facilities.</p>
+              
+              <div class="mb-6 pb-6 border-b border-zinc-900">
+                <div class="flex items-baseline gap-1">
+                  <span id="price-val-premium" class="text-4xl font-black text-white font-mono">₹2,499</span>
+                  <span class="text-xs text-zinc-500 uppercase tracking-wider">/ mo</span>
+                </div>
+                <div id="price-sub-premium" class="text-xs text-gold-400 mt-2 font-mono">Billed monthly</div>
+                <div id="price-save-premium" class="hidden inline-block mt-3 px-2 py-0.5 rounded bg-amber-950/40 border border-amber-900/50 text-[9px] font-bold text-amber-400 uppercase"></div>
+              </div>
+
+              <ul class="flex-col gap-3 mb-8 text-xs text-zinc-300">
+                <li class="flex items-start gap-2.5"><svg style="width:1rem; height:1rem;" class="text-gold-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Everything in Basic Membership included</li>
+                <li class="flex items-start gap-2.5" style="margin-top:0.75rem;"><svg style="width:1rem; height:1rem;" class="text-gold-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Unlimited access to all group classes & Zumba</li>
+                <li class="flex items-start gap-2.5" style="margin-top:0.75rem;"><svg style="width:1rem; height:1rem;" class="text-gold-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Full access to dedicated HIIT & functional zones</li>
+                <li class="flex items-start gap-2.5" style="margin-top:0.75rem;"><svg style="width:1rem; height:1rem;" class="text-gold-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Monthly InBody™ physical body analysis</li>
+                <li class="flex items-start gap-2.5" style="margin-top:0.75rem;"><svg style="width:1rem; height:1rem;" class="text-gold-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> 2 dedicated posture checkups per month</li>
+              </ul>
+            </div>
+            <button class="btn btn-primary w-full py-3.5 claim-pass-launch-btn" data-program="Premium Membership Slot">Select This Tier</button>
+          </div>
+
+          <!-- Card Elite -->
+          <div class="card flex flex-col justify-between" style="text-align: left; padding: 2.5rem;">
+            <div>
+              <div class="flex items-center gap-3 mb-4">
+                <svg style="width:1.25rem; height:1.25rem;" class="text-gold-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                <h3 class="text-lg font-black uppercase text-white">Elite Titan Transformation</h3>
+              </div>
+              <p class="text-zinc-400 text-xs mb-6 min-h-[2.5rem]">Our ultimate physical rehabilitation and private personal-coaching dynamic pipeline.</p>
+              
+              <div class="mb-6 pb-6 border-b border-zinc-900">
+                <div class="flex items-baseline gap-1">
+                  <span id="price-val-elite" class="text-4xl font-black text-white font-mono">₹4,999</span>
+                  <span class="text-xs text-zinc-500 uppercase tracking-wider">/ mo</span>
+                </div>
+                <div id="price-sub-elite" class="text-xs text-gold-400 mt-2 font-mono">Billed monthly</div>
+                <div id="price-save-elite" class="hidden inline-block mt-3 px-2 py-0.5 rounded bg-amber-950/40 border border-amber-900/50 text-[9px] font-bold text-amber-400 uppercase"></div>
+              </div>
+
+              <ul class="flex-col gap-3 mb-8 text-xs text-zinc-300">
+                <li class="flex items-start gap-2.5"><svg style="width:1rem; height:1rem;" class="text-gold-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Everything in Premium Membership included</li>
+                <li class="flex items-start gap-2.5" style="margin-top:0.75rem;"><svg style="width:1rem; height:1rem;" class="text-gold-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> 4 private 1-on-1 personal coaching sessions per month</li>
+                <li class="flex items-start gap-2.5" style="margin-top:0.75rem;"><svg style="width:1rem; height:1rem;" class="text-gold-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Private food charting guide by our head dietician</li>
+                <li class="flex items-start gap-2.5" style="margin-top:0.75rem;"><svg style="width:1rem; height:1rem;" class="text-gold-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Personal permanent luxury locker & towels</li>
+                <li class="flex items-start gap-2.5" style="margin-top:0.75rem;"><svg style="width:1rem; height:1rem;" class="text-gold-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Direct 24/7 WhatsApp helpdesk and freeze privileges</li>
+              </ul>
+            </div>
+            <button class="btn btn-secondary w-full py-3 claim-pass-launch-btn" data-program="Elite Membership Slot">Select This Tier</button>
+          </div>
+        </div>
+
+        <p class="text-center text-[10px] text-zinc-500 mt-12 max-w-lg mx-auto">🔒 Payments are processed securely. Members can pause, freeze or cancel secondary elements directly at the Indirapuram front lobby desk.</p>
+      </div>
+    </section>
+
+    <!-- IMMERSIVE GALLERY -->
+    <section id="gallery">
+      <div class="container text-center">
+        <div class="mb-12">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-gold-950 border border-gold-500/20 mb-4" style="background-color: var(--color-gold-950); padding: 0.25rem 0.75rem; border-radius: 0.25rem; border: 1px solid rgba(204,164,59,0.2);">
+            <span class="badge-dot" style="width:0.35rem; height:0.35rem; display:inline-block;"></span>
+            <span class="font-mono text-[9px] uppercase font-bold tracking-widest text-gold-400">FACILITY NAVIGATOR</span>
+          </div>
+          <h2 class="text-4xl font-black uppercase text-white mb-4">Elite Gym Floors <span class="text-stroke-gold italic">& Spaces</span></h2>
+          <p class="text-zinc-400 text-sm max-w-xl mx-auto">A visual overview inside Indirapuram's premium lifting setup. Select any frame to active our media lightbox.</p>
+        </div>
+
+        <div class="grid grid-cols-2-md grid-cols-3-md gap-6">
+          <!-- Item 1 -->
+          <div class="gallery-card card" style="padding: 0; overflow:hidden; cursor:pointer; position:relative;">
+            <div class="gallery-img-container">
+              <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1200&auto=format&fit=crop" alt="Strength Floor" />
+              <div class="gallery-hover-overlay">
+                <svg style="width:1.5rem; height:1.5rem; position:absolute; top:1rem; right:1rem;" class="text-gold-400" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                <span class="font-mono text-[9px] text-gold-400 uppercase tracking-widest font-bold">Titan Preview</span>
+                <h3 class="text-md font-black uppercase text-white mt-1">Strength Floor Area</h3>
+                <p class="text-[11px] text-zinc-300">Bespoke powerlifting rigs and dumbbell racks up to 60 kgs.</p>
+              </div>
+            </div>
+            <div style="padding: 1rem; text-align: left; background-color: var(--color-zinc-950);"><h4 class="text-xs uppercase font-extrabold text-white">Strength Floor Area</h4></div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="gallery-card card" style="padding: 0; overflow:hidden; cursor:pointer; position:relative;">
+            <div class="gallery-img-container">
+              <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1200&auto=format&fit=crop" alt="Cardio Setup" />
+              <div class="gallery-hover-overlay">
+                <svg style="width:1.5rem; height:1.5rem; position:absolute; top:1rem; right:1rem;" class="text-gold-400" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                <span class="font-mono text-[9px] text-gold-400 uppercase tracking-widest font-bold">Titan Preview</span>
+                <h3 class="text-md font-black uppercase text-white mt-1">Cardio Core Platform</h3>
+                <p class="text-[11px] text-zinc-300">High-flow treadmills and metabolic cross-climb trainers.</p>
+              </div>
+            </div>
+            <div style="padding: 1rem; text-align: left; background-color: var(--color-zinc-950);"><h4 class="text-xs uppercase font-extrabold text-white">Cardio Core Platform</h4></div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="gallery-card card" style="padding: 0; overflow:hidden; cursor:pointer; position:relative;">
+            <div class="gallery-img-container">
+              <img src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?q=80&w=1200&auto=format&fit=crop" alt="Combat area" />
+              <div class="gallery-hover-overlay">
+                <svg style="width:1.5rem; height:1.5rem; position:absolute; top:1rem; right:1rem;" class="text-gold-400" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                <span class="font-mono text-[9px] text-gold-400 uppercase tracking-widest font-bold">Titan Preview</span>
+                <h3 class="text-md font-black uppercase text-white mt-1">Combat & HIIT Club</h3>
+                <p class="text-[11px] text-zinc-300">Heavy impact absorbing tracks for explosive routines.</p>
+              </div>
+            </div>
+            <div style="padding: 1rem; text-align: left; background-color: var(--color-zinc-950);"><h4 class="text-xs uppercase font-extrabold text-white">Combat & HIIT Club</h4></div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="gallery-card card" style="padding: 0; overflow:hidden; cursor:pointer; position:relative;">
+            <div class="gallery-img-container">
+              <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=1200&auto=format&fit=crop" alt="Trainer checking" />
+              <div class="gallery-hover-overlay">
+                <svg style="width:1.5rem; height:1.5rem; position:absolute; top:1rem; right:1rem;" class="text-gold-400" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                <span class="font-mono text-[9px] text-gold-400 uppercase tracking-widest font-bold">Titan Preview</span>
+                <h3 class="text-md font-black uppercase text-white mt-1">Biomechanical Coaching</h3>
+                <p class="text-[11px] text-zinc-300">Certified coaches checking spinal alignment and safe postures.</p>
+              </div>
+            </div>
+            <div style="padding: 1rem; text-align: left; background-color: var(--color-zinc-950);"><h4 class="text-xs uppercase font-extrabold text-white">Biomechanical Coaching</h4></div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="gallery-card card" style="padding: 0; overflow:hidden; cursor:pointer; position:relative;">
+            <div class="gallery-img-container">
+              <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?q=80&w=1200&auto=format&fit=crop" alt="Classes" />
+              <div class="gallery-hover-overlay">
+                <svg style="width:1.5rem; height:1.5rem; position:absolute; top:1rem; right:1rem;" class="text-gold-400" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                <span class="font-mono text-[9px] text-gold-400 uppercase tracking-widest font-bold">Titan Preview</span>
+                <h3 class="text-md font-black uppercase text-white mt-1">Group Class Action</h3>
+                <p class="text-[11px] text-zinc-300">Synchronized rhythm sessions combining aerobic and anaerobic loads.</p>
+              </div>
+            </div>
+            <div style="padding: 1rem; text-align: left; background-color: var(--color-zinc-950);"><h4 class="text-xs uppercase font-extrabold text-white">Group Class Action</h4></div>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="gallery-card card" style="padding: 0; overflow:hidden; cursor:pointer; position:relative;">
+            <div class="gallery-img-container">
+              <img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=1200&auto=format&fit=crop" alt="Interiors" />
+              <div class="gallery-hover-overlay">
+                <svg style="width:1.5rem; height:1.5rem; position:absolute; top:1rem; right:1rem;" class="text-gold-400" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                <span class="font-mono text-[9px] text-gold-400 uppercase tracking-widest font-bold">Titan Preview</span>
+                <h3 class="text-md font-black uppercase text-white mt-1">Space Interiors</h3>
+                <p class="text-[11px] text-zinc-300">Continuous climate mapping and triple sanitation protocols.</p>
+              </div>
+            </div>
+            <div style="padding: 1rem; text-align: left; background-color: var(--color-zinc-950);"><h4 class="text-xs uppercase font-extrabold text-white">Space Interiors</h4></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQS ACCORDION -->
+    <section id="faq" class="bg-zinc-950">
+      <div class="container" style="max-width: 56rem;">
+        <div class="text-center mb-12">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-gold-950 border border-gold-500/20 mb-4" style="background-color: var(--color-gold-950); padding: 0.25rem 0.75rem; border-radius: 0.25rem; border: 1px solid rgba(204,164,59,0.2);">
+            <span class="badge-dot" style="width:0.35rem; height:0.35rem; display:inline-block;"></span>
+            <span class="font-mono text-[9px] uppercase font-bold tracking-widest text-gold-400">FREQUENTLY INQUIRED</span>
+          </div>
+          <h2 class="text-4xl font-black uppercase text-white mb-4">Got <span class="gold-gradient-text">Questions</span>? We Have Answers.</h2>
+          <p class="text-zinc-400 text-sm">Everything you need clarified regarding lockers, trial parameters, dietary support structure, and memberships freeze guidelines.</p>
+        </div>
+
+        <div class="flex-col gap-4">
+          <!-- Accordion 1 -->
+          <div class="faq-item active mb-4">
+            <button class="faq-trigger">
+              <span class="text-sm sm:text-base font-bold pr-4">Do you offer personal training packages at Titan Fitness Club?</span>
+              <div class="faq-icon-holder"><svg style="width:1rem; height:1rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></div>
+            </button>
+            <div class="faq-content text-zs sm:text-sm text-zinc-300 line-relaxed">
+              Yes! We offer customized personal coaching sessions with senior physical trainers. Coaching can also be bundled inside our "Elite Titan Transformation" pass, which covers direct 1-on-1 progressive load monitors, customized glycemic meals schedules, and weekly posture assessments.
+            </div>
+          </div>
+
+          <!-- Accordion 2 -->
+          <div class="faq-item mb-4">
+            <button class="faq-trigger">
+              <span class="text-sm sm:text-base font-bold pr-4">Is there a free trial session for Indirapuram residents?</span>
+              <div class="faq-icon-holder"><svg style="width:1rem; height:1rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></div>
+            </button>
+            <div class="faq-content text-zs sm:text-sm text-zinc-300 line-relaxed">
+              Absolutely. We provide a 1-day complimentary all-access pass for local residents of Indirapuram, Ghaziabad. This offers full entry to our heavy barbell floor, general posture assessments, and clean locker access.
+            </div>
+          </div>
+
+          <!-- Accordion 3 -->
+          <div class="faq-item mb-4">
+            <button class="faq-trigger">
+              <span class="text-sm sm:text-base font-bold pr-4">Are absolute beginners welcome? I have never lifted a weight.</span>
+              <div class="faq-icon-holder"><svg style="width:1rem; height:1rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></div>
+            </button>
+            <div class="faq-content text-zs sm:text-sm text-zinc-300 line-relaxed">
+              Over 40% of our members started their physical fitness journeys as beginners. Every membership includes a complimentary private machine safety orientation led by certified staff members to build confidence comfortably and safely.
+            </div>
+          </div>
+
+          <!-- Accordion 4 -->
+          <div class="faq-item mb-4">
+            <button class="faq-trigger">
+              <span class="text-sm sm:text-base font-bold pr-4">What are the membership charges at Titan Fitness Club?</span>
+              <div class="faq-icon-holder"><svg style="width:1rem; height:1rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></div>
+            </button>
+            <div class="faq-content text-zs sm:text-sm text-zinc-300 line-relaxed">
+              Our monthly rates are strictly transparent: Basic is ₹1,499/mo, Premium Group is ₹2,499/mo, and Elite coached is ₹4,999/mo. We do not have hidden setup or enrollment fees. Discounts apply on quarterly (15% off) and annual (30% off) packages.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT BLOCK & SUBMIT FORM -->
+    <section id="contact">
+      <div class="container">
+        <div class="grid grid-cols-2-md gap-8 items-stretch" style="column-gap: 4rem;">
+          <div style="text-align: left;" class="flex-col justify-between">
+            <div>
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-gold-950 border border-gold-500/20 mb-4" style="background-color: var(--color-gold-950); padding: 0.25rem 0.75rem; border-radius: 0.25rem; border: 1px solid rgba(204,164,59,0.2);">
+                <span class="badge-dot" style="width:0.35rem; height:0.35rem; display:inline-block;"></span>
+                <span class="font-mono text-[10px] uppercase font-bold tracking-[0.2em] text-gold-400">DIRECT RECEPTION DESK</span>
+              </div>
+              <h2 class="text-4xl font-black uppercase text-white mb-6">Schedule Your <span class="gold-gradient-text">biometric Posture Tour</span></h2>
+              <p class="text-zinc-400 text-sm mb-8 line-relaxed">
+                Fill out the secure registration details below. We will immediately pre-fill your free gym day pass and trigger a WhatsApp confirmation directly to our Indirapuram front lobby desks.
+              </p>
+
+              <div class="flex-col gap-4 text-xs text-zinc-300 mb-8">
+                <div class="flex items-center gap-3">
+                  <svg style="width:1.25rem; height:1.25rem;" class="text-gold-500 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <span>Grand Galleria Mall, Sector 14, Indirapuram, Ghaziabad, UP 201014</span>
+                </div>
+                <div class="flex items-center gap-3" style="margin-top:1rem;">
+                  <svg style="width:1.25rem; height:1.25rem;" class="text-gold-500 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  <a href="tel:+919811446304" class="hover:text-gold-400 font-mono">+91 98114 46304</a>
+                </div>
+                <div class="flex items-center gap-3" style="margin-top:1rem;">
+                  <svg style="width:1.25rem; height:1.25rem;" class="text-gold-500 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  <a href="mailto:join@titanfitness.club" class="hover:text-gold-400 font-mono">join@titanfitness.club</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Operating Hours -->
+            <div class="p-5 bg-zinc-950 rounded border border-zinc-900 grid grid-cols-2-sm gap-4" style="margin-top: auto;">
+              <div>
+                <span class="text-[10px] text-zinc-500 uppercase block font-bold tracking-wider">Lobby Hours (Mon - Sat)</span>
+                <span class="font-mono text-xs text-white block mt-0.5" style="letter-spacing:1px;">05:00 AM – 10:00 PM</span>
+              </div>
+              <div>
+                <span class="text-[10px] text-zinc-500 uppercase block font-bold tracking-wider">Sunday Access Floors</span>
+                <span class="font-mono text-xs text-gold-500 block mt-0.5" style="letter-spacing:1px;">07:00 AM – 01:00 PM</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Main Input Submit Card Form -->
+          <div class="card p-8" style="text-align: left;">
+            <form id="footer-contact-form">
+              <div class="form-group">
+                <label class="form-label" for="footer-name">Full Name <span class="text-gold-400">*</span></label>
+                <input type="text" id="footer-name" name="name" placeholder="e.g. Amit Sharma" class="form-input" required />
+                <div class="form-error hidden error-name-container"><svg style="width:0.85rem; height:0.85rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></svg> Name must be at least 3 letters.</div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="footer-phone">Indian Contact Number <span class="text-gold-400">*</span></label>
+                <input type="tel" id="footer-phone" name="phone" placeholder="e.g. 9811446304" class="form-input" required />
+                <div class="form-error hidden error-phone-container"><svg style="width:0.85rem; height:0.85rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></svg> Needs a valid 10-digit mobile number.</div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="footer-goal">Workout Goal / Program</label>
+                <select id="footer-goal" name="goal" class="form-select">
+                  <option value="General Fitness">General Fitness Posture Tour</option>
+                  <option value="Strength Training">Strength Training & Powerlifting</option>
+                  <option value="Fat Loss Burn">Fat Loss & MET Burn</option>
+                  <option value="Hypertrophy Splits">Muscle Core Hypertrophy</option>
+                  <option value="Senior Longevity">Senior Longevity Support</option>
+                  <option value="Zumba Group Class">Active Zumba Group</option>
+                </select>
+              </div>
+
+              <div class="form-group" style="margin-bottom: 2rem;">
+                <label class="form-label" for="footer-message">Additional Note</label>
+                <textarea id="footer-message" name="message" placeholder="Include any queries regarding dynamic medical posture tracking..." class="form-textarea" style="height:5rem; resize:none;"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary w-full py-4 uppercase font-black" style="display-flex; align-items:center; justify-content:center; gap:0.5rem;">
+                <svg style="width:1rem; height:1rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                Send Message & Book Pass
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="pt-16 pb-8 bg-black border-t border-zinc-900 text-left font-sans text-xs">
+      <div class="container">
+        <div class="grid grid-cols-2-md grid-cols-4-md gap-10 mb-12">
+          
+          <!-- Column 1: Bios info -->
+          <div class="flex-col gap-4">
+            <a href="#home" class="flex items-center gap-2" style="font-weight: 900; font-size: 1.15rem;">
+              <div style="background-color: var(--color-gold-500); padding: 0.35rem; border-radius: 0.2rem; color: black; display: flex;">
+                <svg style="width:1rem; height:1rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6.5 6.5 11 11M21 21l-3.5-3.5M3 3l3.5 3.5M18.5 5.5l1.5-1.5 1.5 1.5-1.5 1.5ZM4 20l1.5-1.5 1.5 1.5-1.5 1.5ZM18.5 7.5l-2-2 1.5-1.5-1.5-1.5-1.5 1.5-2 2M7.5 18.5l-2-2 1.5-1.5-1.5-1.5-1.5 1.5-2 2M15 15l-6-6"/></svg>
+              </div>
+              <span>TITAN <span class="text-gold-400">FITNESS</span></span>
+            </a>
+            <p class="text-zinc-500 text-xs line-relaxed">
+              Titan Fitness Club is Indirapuram's physical sanctuary. We forge physical force, joint mobilization alignments, and sustained cardiac definition under certified coaching supervision.
+            </p>
+          </div>
+
+          <!-- Column 2: Programs links -->
+          <div>
+            <h4 class="text-white uppercase font-bold tracking-widest mb-6 font-mono text-[10px]">Training Core</h4>
+            <ul class="flex-col gap-2 font-sans text-zinc-500">
+              <li><a href="#programs" class="hover:text-gold-450 transition-colors">Strength compound lift</a></li>
+              <li style="margin-top:0.5rem;"><a href="#programs" class="hover:text-gold-450 transition-colors">Fat Reductions metabolic</a></li>
+              <li style="margin-top:0.5rem;"><a href="#programs" class="hover:text-gold-450 transition-colors">Target Hypertrophy splits</a></li>
+              <li style="margin-top:0.5rem;"><a href="#programs" class="hover:text-gold-450 transition-colors">Functional Balance athletics</a></li>
+              <li style="margin-top:0.5rem;"><a href="#programs" class="hover:text-gold-450 transition-colors">Senior joint preservation</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Floor hours -->
+          <div>
+            <h4 class="text-white uppercase font-bold tracking-widest mb-6 font-mono text-[10px]">Lobby Operating Hours</h4>
+            <div class="text-zinc-500">
+              <div>
+                <p class="font-bold text-zinc-300 uppercase">Monday – Saturday</p>
+                <p class="text-gold-400 mt-1 font-mono">5:00 AM – 10:00 PM</p>
+              </div>
+              <div style="margin-top: 1rem;">
+                <p class="font-bold text-zinc-300 uppercase">Sunday</p>
+                <p class="text-gold-400 mt-1 font-mono">7:00 AM – 1:00 PM</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 4: Contact links -->
+          <div>
+            <h4 class="text-white uppercase font-bold tracking-widest mb-6 font-mono text-[10px]">Lobby Address</h4>
+            <p class="text-zinc-500 line-relaxed mb-4">Grand Galleria Mall, Sector 14, Indirapuram, Ghaziabad, UP 201014</p>
+            <p class="text-zinc-400 font-mono shrink-0 font-bold"><svg style="width:0.85rem; height:0.85rem; display:inline-block; margin-right:4px;" fill="none" stroke="currentColor" stroke-width="2" class="text-gold-500" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> +91 98114 46304</p>
+          </div>
+        </div>
+
+        <div class="pt-8 border-t border-zinc-900 flex justify-between items-center flex-col md:flex-row gap-4 text-center text-[10px] text-zinc-600">
+          <p>&copy; 2026 Titan Fitness Club Indirapuram. Engineered with precision. All Rights Reserved.</p>
+          <div class="flex gap-6 uppercase tracking-wider font-semibold">
+            <a href="#faq" class="hover:text-gold-400">Safety Code</a>
+            <a href="#membership" class="hover:text-gold-400">Billing Policy</a>
+            <a href="#about" class="hover:text-gold-400">Lobby Directions</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- CLAIM TRIAL PASS MODAL POPUP -->
+    <div id="claim-pass-modal" class="modal-overlay">
+      <div class="modal-content">
+        <button id="modal-close" class="close-btn" aria-label="Close Modal"><svg style="width:1.5rem; height:1.5rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></svg></button>
+        
+        <div class="text-center mb-6">
+          <h3 class="text-xl font-black uppercase text-gold-400">Claim 1-Day Trial Pass</h3>
+          <p class="text-zinc-400 text-xs mt-1">Ready your biomechanic diagnosticPosture parameters for WhatsApp front lobbies dispatch!</p>
+        </div>
+
+        <form id="modal-contact-form">
+          <div class="form-group" style="text-align: left;">
+            <label class="form-label" for="modal-input-name">Full Name <span class="text-gold-400">*</span></label>
+            <input type="text" id="modal-input-name" name="name" placeholder="e.g. Amit Sharma" class="form-input" required />
+            <div class="form-error hidden error-name-container"><svg style="width:0.85rem; height:0.85rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></svg> Name must be at least 3 letters.</div>
+          </div>
+
+          <div class="form-group" style="text-align: left;">
+            <label class="form-label" for="modal-input-phone">Indian Contact PhoneNumber <span class="text-gold-400">*</span></label>
+            <input type="tel" id="modal-input-phone" name="phone" placeholder="e.g. 9811446304" class="form-input" required />
+            <div class="form-error hidden error-phone-container"><svg style="width:0.85rem; height:0.85rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></svg> Needs a valid 10-digit mobile number.</div>
+          </div>
+
+          <div class="form-group" style="text-align: left; margin-bottom: 2rem;">
+            <label class="form-label" for="modal-input-goal">Workout Goal / Selected Tier</label>
+            <select id="modal-input-goal" name="goal" class="form-select">
+              <option value="General Fitness">General Fitness Posture Tour</option>
+              <option value="Strength Training">Strength Training & Powerlifting</option>
+              <option value="Fat Loss Burn">Fat Loss & MET Burn</option>
+              <option value="Hypertrophy Splits">Muscle Core Hypertrophy</option>
+              <option value="Senior Longevity">Senior Longevity Support</option>
+              <option value="Zumba Group Class">Active Zumba Group</option>
+              <option value="Basic Membership">Basic Membership Plan Access</option>
+              <option value="Premium Membership">Premium Membership Group Access</option>
+              <option value="Elite Membership">Elite bespoke Coaching Program</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-full py-4 uppercase font-black" style="display-flex; align-items:center; justify-content:center; gap:0.5rem;">
+            <svg style="width:1rem; height:1rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            Claim Trials Pass
+          </button>
+        </form>
+      </div>
+    </div>
+
+
+    <!-- IMMERSIVE GALLERY LIGHTBOX PANEL OVERLAY -->
+    <div id="lightbox-inspector" class="lightbox" role="dialog" aria-modal="true">
+      <button id="lightbox-close" class="close-btn" style="top:1.5rem; right:1.5rem; z-index:2600;" aria-label="Close Lightbox Inspector"><svg style="width:1.75rem; height:1.75rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></svg></button>
+      
+      <div id="lightbox-count" class="font-mono text-zinc-500 text-xs absolute" style="top:2rem; left:2rem; z-index:2600;">1 / 6</div>
+
+      <div class="lightbox-img-holder w-full" style="max-width: 48rem;">
+        <button id="lightbox-prev" class="lightbox-nav-btn lightbox-prev" aria-label="Prev Image" style="z-index: 2600;"><svg style="width:1.5rem; height:1.5rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg></button>
+        <img id="lightbox-main-img" src="" alt="Titan facility review focus" />
+        <button id="lightbox-next" class="lightbox-nav-btn lightbox-next" aria-label="Next Image" style="z-index: 2600;"><svg style="width:1.5rem; height:1.5rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></button>
+      </div>
+
+      <div style="text-align: center; margin-top: 1rem; max-width: 32rem;">
+        <span class="font-mono text-[9px] uppercase font-bold text-gold-400 tracking-wider">Facility Inspector</span>
+        <h3 id="lightbox-title" class="text-lg font-black uppercase text-white mt-1"></h3>
+        <p id="lightbox-desc" class="text-xs text-zinc-400 mt-1 leading-relaxed"></p>
+      </div>
+    </div>
+
+
+    <!-- TOAST NOTIFICATION SUCCESS -->
+    <div id="main-success-toast" class="toast">
+      <div style="background-color: var(--color-emerald-950); padding: 0.5rem; border-radius: 50%; color: var(--color-emerald-500); display: flex;">
+        <svg style="width:1.25rem; height:1.25rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+      </div>
+      <div style="text-align: left; flex: 1;">
+        <h4 class="text-white text-xs font-black uppercase tracking-wide">Redirection Initiated!</h4>
+        <p class="text-[11px] text-zinc-400 mt-0.5 leading-normal">Your custom day pass credentials have been validated! WhatsApp is spawning to route your lobby tour.</p>
+        <button type="button" class="text-[10px] text-gold-500 hover:text-white font-mono mt-2" onclick="dismissToast()" style="background:transparent; border:none; cursor:pointer;" aria-label="Dismiss Toast">Dismiss</button>
+      </div>
+    </div>
+
+
+    <!-- AUX STICKY SCROLL TO TOP -->
+    <button id="aux-back-top" class="hidden" style="position:fixed; bottom:1.5rem; left:1.5rem; z-index:1500; background-color: var(--color-zinc-900); border: 1px solid var(--color-zinc-800); width: 2.75rem; height: 2.75rem; border-radius: 50%; color: var(--color-gold-400); display:flex; align-items:center; justify-content:center; cursor:pointer;" aria-label="Back to top">
+      <svg style="width:1.25rem; height:1.25rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+
+    <!-- JS CLIENT ENGINE -->
+    <script src="./script.js"></script>
+  </body>
+</html>
